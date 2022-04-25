@@ -52,7 +52,8 @@ const InfoBar = ({ room, name }) => {
         </div>
         <div>
           <button type="button" onClick={() => setShowCloseModal(true)}>
-            <img src={closeIcon} alt="close" className="h-7 p-2" />
+            <h3 className="p-2 border-red-50 border-2 rounded-md hover:bg-red-50">Log Out</h3>
+            {/* <img src={closeIcon} alt="close" className="h-7 p-2" /> */}
           </button>
         </div>
       </div>

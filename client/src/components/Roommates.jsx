@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
+
 import useStore from '../utils/store';
 
 const Roommates = () => {
@@ -8,7 +9,9 @@ const Roommates = () => {
 
   return (
     <div className="flex flex-col pb-2">
-      <div className="w-full px-3 py-2 bg-white text-green-800 font-medium text-sm">Participants: {roommates.length}</div>
+      <div className="w-full px-3 py-2 bg-white text-green-800 font-medium text-sm">
+        Participants: {roommates.length}
+      </div>
       {roommates &&
         roommates.map((roommate) => (
           <RoommateName

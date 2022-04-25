@@ -7,7 +7,6 @@ import useStore from '../utils/store';
 import InfoBar from './InfoBar';
 import Input from './Input';
 import Messages from './Messages';
-import Navbar from './Navbar';
 import Roommates from './Roommates';
 
 let socket;
@@ -57,13 +56,12 @@ const Chat = ({ location }) => {
 
   return (
     <div className="w-screen h-screen bg-green-50">
-      <Navbar />
       <div
         className="w-screen h-full flex items-center justify-center
         overflow-hidden"
       >
         <div
-          className="relative top-12
+          className="relative top-8
           flex flex-col items-center
           h-5/6 w-5/6
           shadow-xl

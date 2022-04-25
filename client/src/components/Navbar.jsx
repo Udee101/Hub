@@ -1,17 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import useStore from '../utils/store';
 
 const Navbar = () => {
+  const { name } = useStore((state) => state);
   return (
-    <div className="w-full fixed top-0 z-10 text-green-700 bg-green-50 flex justify-between p-2 text-green-50	items-center h-16 overflow-y-hidden">
-      <img src="https://ik.imagekit.io/manuelalferez/chatcus/tr:w-0.4/brandname_qEVMdzDXuJY.png" className="ml-4" />
-      <a
-        href="https://github.com/manuelalferez/chatcus"
-        target="_blank"
-        className="flex items-center rounded-md border-green-700 text-green-700 border-2 p-2 hover:bg-green-100"
-      >
-        <img src="https://ik.imagekit.io/manuelalferez/chatcus/github_SB4aytK3j.png" />
-        <span className="pl-2">GitHub</span>
-      </a>
+    <div className="w-full flex justify-between bg-green-50 p-5">
+      {!name ? (
+        <>
+          <img src="https://ik.imagekit.io/manuelalferez/chatcus/tr:w-0.4/brandname_qEVMdzDXuJY.png" className="ml-4" />
+          <a
+            href="https://github.com/manuelalferez/chatcus"
+            target="_blank"
+            className="flex items-center rounded-md border-green-700 text-green-700 border-2 p-2 hover:bg-green-100"
+            rel="noreferrer"
+          >
+            <img src="https://ik.imagekit.io/manuelalferez/chatcus/github_SB4aytK3j.png" alt="logo" />
+            <span className="pl-2">GitHub</span>
+          </a>
+        </>
+      ) : (
+        <>
+          <Link to="/feed" className="text-green-700 border-2 p-2 hover:bg-green-100 border-green-700 rounded-md">
+            Feed
+          </Link>
+          <Link to="/chat" className="text-green-700 border-2 p-2 hover:bg-green-100 border-green-700 rounded-md">
+            Chatbox
+          </Link>
+        </>
+      )}
     </div>
   );
 };
