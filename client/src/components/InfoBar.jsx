@@ -59,7 +59,7 @@ const InfoBar = ({ room, name }) => {
       </div>
       {showCloseModal && (
         <Modal
-          data={{ header: 'You are about to exit the chat room' }}
+          data={{ header: 'You are about to exit YctHub' }}
           actions={{
             onCancel: () => setShowCloseModal(false),
             onConfirm: () => {

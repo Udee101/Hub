@@ -9,8 +9,13 @@ const Navbar = () => {
     <div className="w-full flex justify-between bg-green-50 p-5">
       {!name ? (
         <>
-          <img src="https://ik.imagekit.io/manuelalferez/chatcus/tr:w-0.4/brandname_qEVMdzDXuJY.png" className="ml-4" />
-          <a
+          <div className="h-12 ">
+            <a href="#" className="ml-4 font-pacifico text-green-700 text-2xl md:text-3xl overflow-hidden">
+              YctHub
+            </a>
+          </div>
+
+          {/* <a
             href="https://github.com/manuelalferez/chatcus"
             target="_blank"
             className="flex items-center rounded-md border-green-700 text-green-700 border-2 p-2 hover:bg-green-100"
@@ -18,7 +23,7 @@ const Navbar = () => {
           >
             <img src="https://ik.imagekit.io/manuelalferez/chatcus/github_SB4aytK3j.png" alt="logo" />
             <span className="pl-2">GitHub</span>
-          </a>
+          </a> */}
         </>
       ) : (
         <>

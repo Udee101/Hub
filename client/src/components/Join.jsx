@@ -24,7 +24,7 @@ const Join = ({ location, history }) => {
     <>
       <div className="flex flex-col items-center h-screen bg-green-50 relative z-10">
         <h1 className="text-3xl md:text-6xl mt-32 h-24 mb-10 md:p-2 overflow-y-hidden text-green-700 font-pacifico">
-          Welcome to Chatcus!
+          Welcome to YctHub!
         </h1>
 
         <form
