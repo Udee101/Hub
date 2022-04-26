@@ -61,9 +61,9 @@ const Chat = ({ location }) => {
         overflow-hidden"
       >
         <div
-          className="relative top-8
+          className="relative top-0
           flex flex-col items-center
-          h-5/6 w-5/6
+          h-3/4 w-5/6
           shadow-xl
           overflow-hidden
           rounded-xl"
