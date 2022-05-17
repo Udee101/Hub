@@ -10,7 +10,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-
       <Switch>
         <Route path="/chat" component={Chat} />
         <Route path="/feed" component={Feed} />

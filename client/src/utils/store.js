@@ -10,7 +10,7 @@ const useStore = create(
         pfpSrc: '',
         roommates: [],
         messages: [],
-        posts: [],
+        // posts: [],
 
         setName: (name) => set({ name }),
         setRoom: (room) => set({ room }),
@@ -18,13 +18,12 @@ const useStore = create(
 
         setRoommates: (roommates) => set((state) => ({ roommates })),
         addMessage: (message) => set((state) => ({ messages: [...state.messages, message] })),
-        setPosts: (post) => {
-          set((state) => ({ posts: [...state.posts, post] }));
-          const localPosts = [];
-          const currPosts = localStorage.getItem('posts');
-          localStorage.setItem('posts', JSON.stringify(localPosts.push(post)));
-        },
-
+        // setPosts: (post) => {
+        //   set((state) => ({ posts: [...state.posts, post] }));
+        //   const localPosts = [];
+        //   const currPosts = localStorage.getItem('posts');
+        //   localStorage.setItem('posts', JSON.stringify(localPosts.push(post)));
+        // },
         resetStore: () => set((state) => ({ name: '', room: '', pfpSrc: '', roommates: [], messages: [] })),
       }),
       {
