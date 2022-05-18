@@ -10,6 +10,7 @@
     "lint": "npm run lint:format && npm run lint:fix "
   },
   "dependencies": {
+    "firebase": "^9.8.1",
     "framer-motion": "^4.1.17",
     "query-string": "^7.0.1",
     "react": "^17.0.0",
